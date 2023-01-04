@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        fieldset{
+            width: 40%;
+            margin: 0 auto;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        fieldset>div{
+            padding: 15px;
+        }
+        p{
+            margin-right: 10px;
+        }
+        button{
+            display: inline-block;
+            margin: 0 auto;
+        }
+        h1{
+            text-align: center;
+        }
+        input{
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid black;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Validation</h1>
+    <form id="form">
+    <fieldset>
+        <div>
+            <label for="">User Name:</label><br><br>
+            <input type="text" placeholder="Enter Your User Name" id="name">
+        </div>
+        <div>
+            <label for="">Gmail:</label><br><br>
+            <input type="email" placeholder="Enter Your Gmail" id="mail">
+        </div>
+        <div>
+            <label for="">Password:</label><br><br>
+            <input type="password" placeholder="Enter Your Password" id="pass">
+        </div>
+        <div>
+            <label for="">Confirm Password:</label><br><br>
+            <input type="password" placeholder="Re-Enter Your Password" id="confirm">
+        </div>
+        <div style="display: flex;justify-content: center;">
+            <button>Submit</button>
+        </div>
+    </fieldset>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
